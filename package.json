@@ -18,6 +18,7 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1648802546.c9880dc",
     "typescript": "^4.8.3",
     "vue-tsc": "^0.40.13"
   }
