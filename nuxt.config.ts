@@ -5,5 +5,12 @@ export default defineNuxtConfig({
   ],
   auth: {
     // Options
+  },
+  vite: {
+    server: {
+      hmr: {
+        protocol: 'ws'
+      }
+    }
   }
 })
