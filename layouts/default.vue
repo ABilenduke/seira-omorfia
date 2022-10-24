@@ -10,9 +10,9 @@
         </header> -->
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                </a>
+                <NuxtLink to="/" class="navbar-item">
+                    <img src="~/assets/img/seira_logo.png" width="120" height="auto">
+                </NuxtLink>
 
                 <a role="button" class="navbar-burger" :class="menuIsActive ? 'is-active' : ''" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" @click="menuIsActive = !menuIsActive">
                     <span aria-hidden="true"></span>
@@ -22,9 +22,7 @@
             </div>
             <div id="navbarBasicExample" class="navbar-menu" :class="menuIsActive ? 'is-active' : ''">
                 <div class="navbar-start">
-                    <NuxtLink to="/" class="navbar-item">
-                        Home page
-                    </NuxtLink>
+                    
                 </div>
 
                 <div class="navbar-end">
@@ -49,3 +47,9 @@
         </footer>
     </section>
 </template>
+
+<style>
+.navbar {
+    min-height: 2.5rem;
+}
+</style>

@@ -1,15 +1,15 @@
 export const fetchStuff = ({
-    method = 'GET',
-    mode = 'cors',
-    cache = 'no-cache',
-    credentials = 'same-origin',
-    headers = {
+  method = 'GET',
+  mode = 'cors',
+  cache = 'no-cache',
+  credentials = 'same-origin',
+  headers = {
     'Content-Type': 'application/json',
-    },
-    redirect = 'follow',
-    referrerPolicy = 'no-referrer',
-    body = ''
-  }) => {
+  },
+  redirect = 'follow',
+  referrerPolicy = 'no-referrer',
+  body = '',
+}) => {
   const fetchStuffs = {
     method, // *GET, POST, PUT, DELETE, etc.
     mode, // no-cors, *cors, same-origin
@@ -21,7 +21,7 @@ export const fetchStuff = ({
   }
 
   if (method !== 'GET') {
-    fetchStuffs['body'] = body // body data type must match "Content-Type" header
+    fetchStuffs.body = body // body data type must match "Content-Type" header
   }
   return fetchStuffs
 }

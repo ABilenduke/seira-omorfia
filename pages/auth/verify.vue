@@ -16,12 +16,15 @@
 
     
     async function verify_email(token) {
-        const url = `https://backend.flask-redis.test/v1/email_verification/${token}`
+        const url = `https://backend.flask-redis.test/v1/email_verification`
         
         try {
             const response = await $fetch(
                 url, 
-                fetchStuff({method: 'GET'})
+                fetchStuff({
+                    method: 'POST',
+                    body: JSON.stringify({token: token})
+                }),
             );
             console.log(response)
         } catch (err) {

@@ -9,7 +9,7 @@ const useAuth = () => {
   }
 
   return {
-    isLoggedIn
+    isLoggedIn,
   }
 }
 
